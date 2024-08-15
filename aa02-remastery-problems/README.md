@@ -10,6 +10,8 @@ Complete the problems in the order specified.
 
 If you have any trouble with this setup don't hesitate to ask a TA for help!
 
+npm test test/01-my-for-each-spec.js
+
 ## Submission
 
 When you are ready to submit:

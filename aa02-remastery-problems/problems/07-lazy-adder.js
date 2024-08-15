@@ -23,6 +23,20 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // Your code here 
+function lazyAdder(firstNum) {
+  return function(secondNum) {
+      return function(thirdNum) {
+          return firstNum + secondNum + thirdNum;
+      };
+  };
+}
+ /*
+ Explaining how you would turn my solution into a one-line fat-arrow function!
+ 
+ You'd define `lazyAdder` as an arrow function that returns an arrow function, 
+ which itself returns another arrow function. Each function would capture its 
+ respective argument (`firstNum), `secondNum`, 'thirdNum`), and the innermost
+function would return the sum of all three arguments. 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

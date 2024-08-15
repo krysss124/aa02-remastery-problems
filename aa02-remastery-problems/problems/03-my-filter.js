@@ -19,9 +19,19 @@ let result2 = myFilter(['choose', 'big', 'words', 'only'], function (s) {
 console.log(result2);      // ['choose', 'words', 'only']
 *******************************************************************************/
 
-function myFilter(array, cb) {
-    // Your code here 
+function myFilter(arr, callback) {
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (callback(arr[i], i, arr)) {
+            result.push(arr[i]);
+        }
+    }
+
+    return result;
 }
+
+
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
